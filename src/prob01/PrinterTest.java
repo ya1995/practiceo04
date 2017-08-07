@@ -9,6 +9,9 @@ public class PrinterTest {
 		printer.println( true );
 		printer.println( 5.7 );
 		printer.println( "홍길동" );
-	}
+		
+		printer.println2( new String[] { "둘리", "마이콜", "또치"} );
+	
+		}
 
 }
