@@ -39,14 +39,14 @@ public class Book {
 	}
 	
 	public void rent() {
-		stateCode = 0;
+		setStateCode(0);
 		System.out.println( title + "이(가) 대여 됐습니다.");
 	}
 	
 	public void print() {
 		System.out.println( "책 제목:" + title +
 				" 작가:" + author +
-				" 대여 유무:" + ( (stateCode == 1) ? "재고있음" : "대여중" )
+				" 대여 유무:" + ( (getStateCode() == 1) ? "재고있음" : "대여중" )
 				);
 		}
 }
